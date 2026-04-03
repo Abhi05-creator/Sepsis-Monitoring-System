@@ -1,0 +1,10 @@
+﻿venv/
+__pycache__/
+*.pyc
+node_modules/
+dist/
+.env
+*.pkl
+*.pt
+sample_data.csv
+model_config.json

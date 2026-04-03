@@ -1,0 +1,59 @@
+/* frontend/src/index.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { font-family: 'IBM Plex Mono', 'Courier New', monospace; }
+
+body { @apply bg-icu-dark text-white; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { @apply bg-icu-dark; }
+::-webkit-scrollbar-thumb { @apply bg-icu-border rounded-full; }
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239,68,68,0); }
+  50%       { box-shadow: 0 0 24px 4px rgba(239,68,68,0.35); }
+}
+.pulse-critical { animation: pulse-glow 1.8s ease-in-out infinite; }
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fade-in 0.25s ease-out; } */
+
+
+
+
+@import "tailwindcss";
+
+@theme {
+  --color-icu-dark: #0a0f1e;
+  --color-icu-card: #111827;
+  --color-icu-border: #1f2937;
+  --color-vital-green: #22c55e;
+  --color-vital-yellow: #eab308;
+  --color-vital-red: #ef4444;
+  --color-vital-blue: #3b82f6;
+}
+
+* { font-family: 'IBM Plex Mono', 'Courier New', monospace; }
+
+body { background-color: #0a0f1e; color: white; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0a0f1e; }
+::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 9999px; }
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239,68,68,0); }
+  50%       { box-shadow: 0 0 24px 4px rgba(239,68,68,0.35); }
+}
+.pulse-critical { animation: pulse-glow 1.8s ease-in-out infinite; }
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fade-in 0.25s ease-out; }
